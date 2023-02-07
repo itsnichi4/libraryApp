@@ -1,1 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="pico.min.css" />
+    <link rel="stylesheet" href="stylesOverwrite.css" />
 
+    <title>LibraryApp</title>
+  </head>
+  <body>
+    <h1>Welcome to the library! shh!</h1>
+    <button id="addBook">Wanna make a list?</button>
+    <main class="container">
+      <h2>
+        Please enter your book information on the table below, and we will add
+        it to the library.
+      </h2>
+      <form id="form">
+        <label>Book Name</label>
+        <input type="text" />
+        <label>Book Author</label>
+        <input type="text" />
+        <label>Pages Number</label>
+        <input type="text" />
+        <label>Read</label>
+        <input type="checkbox" />
+        <button type="submit">Submit form</button>
+      </form>
+      <p id="log"></p>
+      <table id="booksTable">
+        <tr>
+          <td>Book Name</td>
+          <td>Book Author</td>
+          <td>Pages Number</td>
+          <td>Status</td>
+          <td></td>
+        </tr>
+        <tr></tr>
+      </table>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>
